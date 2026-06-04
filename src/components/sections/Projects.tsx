@@ -84,7 +84,21 @@ const projects: Project[] = [
   },
   {
     num: "05",
+    title: "Deloitte Digital",
+    category: "Web Design · Development",
+    year: "2024",
+    desc: "Design and development work for Deloitte Digital's US web presence — one of the world's leading digital transformation consultancies. Cinematic hero experience, structured service and insights architecture, and enterprise-grade UI.",
+    tags: ["Web Design", "UI/UX", "Development", "Enterprise"],
+    color: "bg-[#0A0A0A]",
+    accent: "#86BC25",
+    image: "/deloitte-digital.png",
+    href: "https://www.deloittedigital.com/us/en.html",
+    filters: ["Web Design", "Web Dev"],
+  },
+  {
+    num: "06",
     title: "CoolAir Pro",
+
     category: "Web Development · AI-Powered",
     year: "2025",
     desc: "Full-stack HVAC contractor site for Dallas, TX — AI chatbot scoped strictly to HVAC queries, 3-step quote calculator, EN/ES toggle, membership plans, financing page, and an admin dashboard with lead management and CSV export.",
