@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-bg: #FAFAFA;
+  --color-surface: #F0F3F9;
+  --color-text: #111827;
+  --color-muted: #6B7280;
+  --color-accent: #4B7A00;
+
+  --font-display: var(--font-syne);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-space-mono);
+}
+
+.dark {
+  --color-bg: #0F1117;
+  --color-surface: #1A1D27;
+  --color-text: #F9FAFB;
+  --color-muted: #6B7280;
+  --color-accent: #D4FF4D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --divider: rgba(0, 0, 0, 0.08);
+}
+.dark {
+  --divider: rgba(255, 255, 255, 0.08);
+}
+
+.border-theme {
+  border-color: var(--divider);
+}
+
+/* Card shadow utilities */
+.shadow-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+.shadow-card-hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+.dark .shadow-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.dark .shadow-card-hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.25s ease, color 0.25s ease;
+  overflow-x: hidden;
+}
+
+
+::selection {
+  background: var(--color-accent);
+  color: #111111;
+}
+
+@keyframes marquee-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.3334%); }
+}
+@keyframes marquee-right {
+  0%   { transform: translateX(-33.3334%); }
+  100% { transform: translateX(0); }
+}

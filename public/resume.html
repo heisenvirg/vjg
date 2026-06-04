@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virgil Joseph Garrido — Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @page {
+      margin: 0.6in 0.65in;
+      size: A4;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 9.5pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 32px 48px;
+    }
+
+    /* Header */
+    .header { text-align: center; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1.5px solid #1a1a1a; }
+    .header h1 { font-size: 16pt; font-weight: bold; letter-spacing: 0.01em; margin-bottom: 2px; }
+    .header .title { font-size: 9.5pt; color: #444; margin-bottom: 6px; font-style: italic; }
+    .header .contact { font-size: 8pt; color: #333; font-family: 'Arial', sans-serif; }
+    .header .contact a { color: #333; text-decoration: none; }
+    .header .contact .sep { margin: 0 5px; color: #999; }
+
+    /* Section */
+    .section { margin-bottom: 10px; }
+    .section-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 7pt;
+      font-weight: bold;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #555;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* Profile */
+    .profile p {
+      font-size: 9pt;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 32px; }
+    .skill-group { }
+    .skill-label {
+      font-family: 'Arial', sans-serif;
+      font-size: 7.5pt;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 1px;
+    }
+    .skill-list {
+      font-family: 'Arial', sans-serif;
+      font-size: 8pt;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    /* Jobs */
+    .job { margin-bottom: 9px; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1px; }
+    .job-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 9pt;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+    .job-date {
+      font-family: 'Arial', sans-serif;
+      font-size: 7.5pt;
+      color: #666;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+    .job-company {
+      font-family: 'Arial', sans-serif;
+      font-size: 8pt;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    .job-desc {
+      font-size: 8.5pt;
+      color: #333;
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+    .job ul {
+      padding-left: 13px;
+      margin-top: 3px;
+    }
+    .job li {
+      font-family: 'Arial', sans-serif;
+      font-size: 8pt;
+      color: #333;
+      margin-bottom: 2px;
+      line-height: 1.45;
+    }
+    .stack {
+      font-family: 'Arial', sans-serif;
+      font-size: 7.5pt;
+      color: #666;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    /* Education */
+    .edu { display: flex; justify-content: space-between; align-items: baseline; }
+    .edu-left .degree {
+      font-family: 'Arial', sans-serif;
+      font-size: 8.5pt;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+    .edu-left .school {
+      font-family: 'Arial', sans-serif;
+      font-size: 8pt;
+      color: #555;
+    }
+    .edu-right {
+      font-family: 'Arial', sans-serif;
+      font-size: 7.5pt;
+      color: #666;
+    }
+
+    /* Print */
+    @media print {
+      @page {
+        margin: 0.55in 0.6in;
+        size: A4;
+      }
+      html, body { margin: 0; padding: 0; }
+      body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { padding: 0; max-width: 100%; margin: 0; }
+      .no-print { display: none !important; }
+      a { color: inherit !important; text-decoration: none !important; }
+    }
+
+    /* Print button */
+    .print-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      z-index: 100;
+    }
+    .print-bar button {
+      background: #fff;
+      color: #1a1a1a;
+      border: none;
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .print-bar button:hover { opacity: 0.85; }
+    @media print { .print-bar { display: none; } }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar no-print">
+    <span>To save as PDF: click Print → change destination to "Save as PDF"</span>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="page" style="margin-top: 44px;">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Virgil Joseph Garrido</h1>
+      <p class="title">AI-Powered Fullstack Developer &amp; UI/UX Designer</p>
+      <p class="contact">
+        Dasmariñas, Cavite, Philippines
+        <span class="sep">·</span>
+        0999 156 7747
+        <span class="sep">·</span>
+        <a href="mailto:virgilj.garrido@gmail.com">virgilj.garrido@gmail.com</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/virgil-joseph-garrido-9ba0a3357/" target="_blank">LinkedIn</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/heisenvirg" target="_blank">GitHub</a>
+        <span class="sep">·</span>
+        <a href="https://virgilgarrido.vercel.app" target="_blank">Portfolio</a>
+      </p>
+    </header>
+
+    <!-- Profile -->
+    <section class="section profile">
+      <p class="section-title">Profile</p>
+      <p>
+        Fullstack developer and UI/UX designer with 7+ years building design-led products that convert.
+        I use AI as a force multiplier — shipping in days what agencies take weeks to deliver.
+        Expert in Next.js, TypeScript, React, Tailwind CSS, Figma, and Supabase.
+        From Figma to full-stack production: pixel-perfect interfaces, real AI integrations, and systems that run without manual work.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <p class="section-title">Skills</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <p class="skill-label">Frontend</p>
+          <p class="skill-list">React, Next.js, TypeScript, Tailwind CSS, Framer Motion</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">Design</p>
+          <p class="skill-list">Figma, Adobe XD, Photoshop, Adobe Illustrator, Canva, Framer, UI/UX Design, Wireframing &amp; Prototyping, Component Libraries, User Research, Design Handoff, Mobile-First Design</p>
+        </div>
+        <div class="skill-group" style="margin-top: 6px;">
+          <p class="skill-label">Backend &amp; Full-Stack</p>
+          <p class="skill-list">Supabase, Stripe Integration, Sanity.io, Headless WordPress, WordPress, Elementor, Next.js API Routes</p>
+        </div>
+        <div class="skill-group" style="margin-top: 6px;">
+          <p class="skill-label">AI &amp; Automation</p>
+          <p class="skill-list">Claude AI, ChatGPT, Make.com, n8n, Zapier, Airtable, Resend, Workflow Automation, AI Chatbot Integration</p>
+        </div>
+        <div class="skill-group" style="margin-top: 6px;">
+          <p class="skill-label">Deployment &amp; SEO</p>
+          <p class="skill-list">Vercel, Git, GitHub, SEO, JSON-LD Schema, Sitemap, Metadata Optimization</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Employment -->
+    <section class="section">
+      <p class="section-title">Employment History</p>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Freelance Web Developer, UI/UX Designer &amp; AI Automation Specialist</span>
+          <span class="job-date">2025 — Present</span>
+        </div>
+        <p class="job-company">Independent</p>
+        <ul>
+          <li>Built luxury vacation rental sites with direct booking (Stripe), calendar availability management, and SEO — eliminating OTA platform fees for hosts</li>
+          <li>Developed AI-powered contractor site with Claude chatbot scoped to business queries, 3-step quote calculator, bilingual EN/ES toggle, and admin dashboard with lead management and CSV export</li>
+          <li>Built and integrated Make.com + Claude AI automated hiring pipeline: scores applicants 1–10, logs results with strengths/weaknesses to Airtable, sends follow-up emails automatically — zero manual work</li>
+          <li>Designed and built multi-location restaurant site in Framer: bilingual EN/FR, menus, online reservations, food truck section, franchise page, Instagram feed integration</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">UI/UX Designer &amp; Graphic Designer</span>
+          <span class="job-date">2021 — 2025</span>
+        </div>
+        <p class="job-company">Growmodo — Talent-as-a-service platform serving 200+ marketing leaders, agencies, and fast-growing brands worldwide</p>
+        <ul>
+          <li>Delivered UI/UX and graphic design work across SaaS, e-commerce, and agency verticals — web interfaces, marketing assets, and brand visuals</li>
+          <li>Built and maintained reusable Figma component libraries used across multiple client accounts for consistent design at scale</li>
+          <li>Created wireframes, user flows, and low-to-high fidelity prototypes; collaborated with developers with detailed specs, component documentation, and assets</li>
+          <li>Early adopter of AI tools — independently discovered and applied ChatGPT to accelerate design research, copywriting, and workflow, improving output speed and quality</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">UI/UX Designer → Web Developer</span>
+          <span class="job-date">2019 — 2021</span>
+        </div>
+        <p class="job-company">GoCrayons Digital Inc.</p>
+        <ul>
+          <li>Joined as UI/UX Designer creating wireframes, prototypes, and high-fidelity mockups; promoted to Web Developer based on performance</li>
+          <li>Built pixel-perfect WordPress + Elementor websites for clients across multiple industries — landing pages, full sites, and e-commerce solutions</li>
+          <li>Maintained and optimized existing WordPress sites with updates, customizations, and performance improvements</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <p class="section-title">Education</p>
+      <div class="edu">
+        <div class="edu-left">
+          <p class="degree">Bachelor of Science in Information Technology</p>
+          <p class="school">Cavite State University — Cavite City</p>
+        </div>
+        <div class="edu-right">2016 — 2019</div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
