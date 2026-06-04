@@ -97,6 +97,19 @@ const projects: Project[] = [
   },
   {
     num: "06",
+    title: "OC Fitness Coach",
+    category: "Web Design · Development · Migration",
+    year: "2025",
+    desc: "WordPress migration from private server to HostGator with zero SEO loss — preserved all URLs, metadata, and Google rankings. Then redesigned the full site in a staging environment using Elementor, ACF, and Custom Post Types based on Figma-approved layouts. Result: faster, mobile-friendly site with improved UX and maintained rankings.",
+    tags: ["WordPress", "Elementor", "ACF", "Figma", "SEO", "HostGator"],
+    color: "bg-[#0A0F0A]",
+    accent: "#22C55E",
+    image: "/oc-fitness-coach.png",
+    href: "https://ocfitnesscoach.com/",
+    filters: ["Web Design", "Web Dev"],
+  },
+  {
+    num: "08",
     title: "LBL Services",
     category: "Web Design · Development",
     year: "2025",
@@ -109,7 +122,7 @@ const projects: Project[] = [
     filters: ["Web Design", "Web Dev"],
   },
   {
-    num: "07",
+    num: "09",
     title: "CoolAir Pro",
 
     category: "Web Development · AI-Powered",
