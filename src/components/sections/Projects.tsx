@@ -327,6 +327,32 @@ const projects: Project[] = [
       result: "High-end wellness brand website with streamlined booking experience, marketing automation in place, and a client fully equipped to manage and scale the site independently.",
     },
   },
+  {
+    num: "13",
+    title: "Turks & Caicos Resort Guide",
+    category: "Web Dev · WordPress · Migration",
+    year: "2025",
+    desc: "Migrated a travel platform from Loveable to WordPress + Elementor. Built custom post types for resorts and rooms, a trip budget calculator, room comparison feature, dynamic room detail pages, category filtering, and Calendly booking integration.",
+    tags: ["WordPress", "Elementor", "Custom Post Types", "Calendly", "Migration"],
+    color: "bg-[#041420]",
+    accent: "#0EA5E9",
+    image: "/turks-caicos-resort-guide.png",
+    href: "https://turksandcaicosresortguide.com/",
+    filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Migrate a travel discovery platform from Loveable to WordPress — giving the client full content control, a scalable structure, and custom travel planning features that Loveable couldn't support.",
+      built: [
+        "Full Loveable to WordPress migration with branding and content transfer",
+        "Custom Post Types for resorts and individual room listings",
+        "Room comparison feature and dynamic room detail pages",
+        "Product category filtering for resort discovery",
+        "Trip budget calculator for visitor trip planning",
+        "Calendly booking integration for consultation scheduling",
+        "About Us, Contact, and Planning Guides pages",
+      ],
+      result: "Scalable travel platform on WordPress with simplified content management, custom discovery tools, room comparison, and a live booking integration — giving the client full ownership of the site.",
+    },
+  },
 ];
 
 const GALLERY_LABELS: Record<string, string> = {
