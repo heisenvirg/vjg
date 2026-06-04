@@ -110,7 +110,21 @@ const projects: Project[] = [
   },
   {
     num: "08",
+    title: "Texas Fruit Festival",
+    category: "Web Design · Development · CRO",
+    year: "2025",
+    desc: "Landing page design and full site overhaul for a raw vegan wellness festival in Austin, TX. Figma mockup, WordPress + Elementor build optimized for mobile traffic from Instagram and Facebook ads. Streamlined ticket purchase flow, updated all 11 pages for visual consistency — resulted in significant lift in ticket sales and reduced drop-off.",
+    tags: ["WordPress", "Elementor", "WooCommerce", "Figma", "CRO"],
+    color: "bg-[#1A0A00]",
+    accent: "#F97316",
+    image: "/texas-fruit-festival.png",
+    href: "https://texasfruitfestival.com/",
+    filters: ["Web Design", "Web Dev"],
+  },
+  {
+    num: "09",
     title: "LBL Services",
+
     category: "Web Design · Development",
     year: "2025",
     desc: "Full design and development for an AI model development and training services company. Clean purple-accented UI, service showcase, team section, and contact form — built with WordPress and Elementor.",
@@ -122,7 +136,7 @@ const projects: Project[] = [
     filters: ["Web Design", "Web Dev"],
   },
   {
-    num: "09",
+    num: "10",
     title: "CoolAir Pro",
 
     category: "Web Development · AI-Powered",
