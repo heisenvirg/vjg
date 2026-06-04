@@ -123,7 +123,21 @@ const projects: Project[] = [
   },
   {
     num: "09",
+    title: "Stucky Injury Law",
+    category: "Web Design · Development · Local SEO",
+    year: "2025",
+    desc: "Professional law firm website for a Dallas & Fort Worth personal injury attorney. Dedicated practice area pages (car accidents, truck accidents, wrongful death, and more), SEO-optimized content structure, case results, testimonials, and consultation lead forms — built to rank locally and convert visitors into clients.",
+    tags: ["WordPress", "Elementor", "Figma", "SEO", "Legal"],
+    color: "bg-[#0A0F1A]",
+    accent: "#B8912A",
+    image: "/stucky-law.png",
+    href: "https://stuckylaw.com",
+    filters: ["Web Design", "Web Dev"],
+  },
+  {
+    num: "10",
     title: "LBL Services",
+
 
     category: "Web Design · Development",
     year: "2025",
@@ -136,7 +150,7 @@ const projects: Project[] = [
     filters: ["Web Design", "Web Dev"],
   },
   {
-    num: "10",
+    num: "11",
     title: "CoolAir Pro",
 
     category: "Web Development · AI-Powered",
