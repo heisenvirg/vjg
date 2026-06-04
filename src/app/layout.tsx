@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Syne, Space_Grotesk, Space_Mono } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const syne = Syne({
@@ -55,6 +57,8 @@ export default function RootLayout({
     >
       <body className="antialiased">
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
