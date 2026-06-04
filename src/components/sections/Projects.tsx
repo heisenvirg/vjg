@@ -7,6 +7,12 @@ import { ArrowUpRight, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 type FilterKey = "All" | "Web Design" | "Web Dev" | "AI Automation";
 
+interface ProjectDetails {
+  goal: string;
+  built: string[];
+  result: string;
+}
+
 interface Project {
   num: string;
   title: string;
@@ -21,6 +27,7 @@ interface Project {
   images?: string[];
   href?: string;
   filters: FilterKey[];
+  details?: ProjectDetails;
 }
 
 const FILTERS: FilterKey[] = ["All", "Web Design", "Web Dev", "AI Automation"];
@@ -38,6 +45,17 @@ const projects: Project[] = [
     image: "/lumiere-collection.png",
     href: "https://lumiere-collection.vercel.app/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Build a luxury villa rental platform for 5 private properties across Tulum, Lisbon, Saint-Tropez, Santorini, and Maui — designed to drive direct bookings and eliminate OTA platform fees.",
+      built: [
+        "Editorial split-screen layout with full-bleed property photography",
+        "Direct booking flow with no OTA platform fees",
+        "WhatsApp concierge integration for guest inquiries",
+        "Individual property pages with unique layouts for all 5 villas",
+        "SEO-optimized structure with metadata and sitemap",
+      ],
+      result: "Live booking platform delivering a premium guest experience and cutting OTA dependency for villa hosts.",
+    },
   },
   {
     num: "02",
@@ -45,12 +63,23 @@ const projects: Project[] = [
     category: "Web Design · Development",
     year: "2025",
     desc: "Luxury beachfront villa rental site for a private residence on Collins Avenue, Miami. Full-bleed hero, scroll animations, direct booking flow with Stripe, local guide, and Airbnb/VRBO sync — built to drive direct bookings and cut platform fees.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion", "Stripe"],
     color: "bg-[#0A0E17]",
     accent: "#C9A052",
     image: "/sunset-villa.png",
     href: "https://vacation-rental-lrom.vercel.app/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Help a Miami beachfront villa owner drive direct bookings and reduce reliance on Airbnb and VRBO platform fees.",
+      built: [
+        "Full-bleed hero with scroll-triggered animations",
+        "Direct booking flow with Stripe payment integration",
+        "Airbnb and VRBO calendar sync to avoid double bookings",
+        "Local guide and property highlights sections",
+        "Mobile-first responsive layout",
+      ],
+      result: "Live site enabling direct bookings with full payment processing and platform calendar sync — cutting OTA fees for the host.",
+    },
   },
   {
     num: "03",
@@ -68,6 +97,17 @@ const projects: Project[] = [
       "/airtable-candidate-pipeline.png",
     ],
     filters: ["AI Automation"],
+    details: {
+      goal: "Eliminate manual work from the entire hiring process — from candidate intake to scoring and follow-up — using AI and automation.",
+      built: [
+        "Tally form to capture structured candidate submissions",
+        "Make.com pipeline connecting all tools end-to-end",
+        "Claude AI scoring each applicant 1–10 with strengths, weaknesses, and hire recommendations",
+        "Airtable logging all results with full candidate profiles",
+        "Automated Gmail follow-up emails sent to top scorers automatically",
+      ],
+      result: "Zero manual work — every applicant is scored, logged, and followed up automatically within minutes of submitting their application.",
+    },
   },
   {
     num: "04",
@@ -81,6 +121,17 @@ const projects: Project[] = [
     image: "/birdhouse-wings.png",
     href: "https://birdhousewings.com/en/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Build a full website for a multi-location restaurant chain in Quebec, Canada — bilingual, brand-forward, and capable of handling online reservations and franchise inquiries.",
+      built: [
+        "Bilingual EN/FR toggle across all pages",
+        "Menus, online reservations, and corporate events sections",
+        "Food truck section and franchise inquiry page",
+        "Instagram feed integration",
+        "Bold dark branding with red accents built in Framer",
+      ],
+      result: "Live site serving multiple Quebec locations with full bilingual support, online reservations, and a franchise inquiry pipeline.",
+    },
   },
   {
     num: "05",
@@ -94,51 +145,93 @@ const projects: Project[] = [
     image: "/deloitte-digital.png",
     href: "https://www.deloittedigital.com/us/en.html",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Design and development work for Deloitte Digital's US web presence — enterprise-grade digital experience for one of the world's top digital transformation consultancies.",
+      built: [
+        "Cinematic video hero with enterprise-grade typography",
+        "Structured service and capabilities architecture",
+        "DD Insights and thought leadership sections",
+        "Conversion-focused contact and inquiry flows",
+        "Responsive design across all device sizes",
+      ],
+      result: "Enterprise-grade web presence representing Deloitte Digital's US brand and service offering.",
+    },
   },
   {
     num: "06",
     title: "OC Fitness Coach",
     category: "Web Design · Development · Migration",
     year: "2025",
-    desc: "WordPress migration from private server to HostGator with zero SEO loss — preserved all URLs, metadata, and Google rankings. Then redesigned the full site in a staging environment using Elementor, ACF, and Custom Post Types based on Figma-approved layouts. Result: faster, mobile-friendly site with improved UX and maintained rankings.",
+    desc: "WordPress migration from private server to HostGator with zero SEO loss — preserved all URLs, metadata, and Google rankings. Then redesigned the full site using Elementor, ACF, and Custom Post Types based on Figma-approved layouts.",
     tags: ["WordPress", "Elementor", "ACF", "Figma", "SEO", "HostGator"],
     color: "bg-[#0A0F0A]",
     accent: "#22C55E",
     image: "/oc-fitness-coach.png",
     href: "https://ocfitnesscoach.com/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Safely migrate a high-ranking WordPress site from a private server to HostGator without losing SEO performance, then modernize the design to improve conversions.",
+      built: [
+        "Full WordPress migration with database backup and DNS/SSL setup",
+        "SEO integrity checks before and after — preserved all URLs, metadata, and internal links",
+        "Full site redesign in staging environment using Elementor, ACF, and Custom Post Types",
+        "Mobile-optimized layouts based on Figma-approved designs",
+        "Reusable blog templates and performance optimizations",
+      ],
+      result: "Zero SEO loss after migration — all Google rankings maintained. Faster, modern site with improved mobile UX and conversion structure.",
+    },
   },
   {
-    num: "08",
+    num: "07",
     title: "Texas Fruit Festival",
     category: "Web Design · Development · CRO",
     year: "2025",
-    desc: "Landing page design and full site overhaul for a raw vegan wellness festival in Austin, TX. Figma mockup, WordPress + Elementor build optimized for mobile traffic from Instagram and Facebook ads. Streamlined ticket purchase flow, updated all 11 pages for visual consistency — resulted in significant lift in ticket sales and reduced drop-off.",
+    desc: "Landing page design and full site overhaul for a raw vegan wellness festival in Austin, TX. Figma mockup, WordPress + Elementor build optimized for mobile traffic from Instagram and Facebook ads. Streamlined ticket purchase flow across 11 pages — resulted in significant lift in ticket sales.",
     tags: ["WordPress", "Elementor", "WooCommerce", "Figma", "CRO"],
     color: "bg-[#1A0A00]",
     accent: "#F97316",
     image: "/texas-fruit-festival.png",
     href: "https://texasfruitfestival.com/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Increase ticket sales from Instagram and Facebook ad traffic by redesigning the landing page and streamlining the ticket purchase flow.",
+      built: [
+        "Figma mockup delivered for client approval before development",
+        "WordPress + Elementor landing page fully optimized for mobile ad traffic",
+        "Ticket purchase flow redesigned to reduce friction and drop-off",
+        "Full site update across 11 pages — Homepage, Speakers, Experience, About, FAQs, Contact, Schedule, Sponsors, and more",
+        "Consistent typography, spacing, and mobile responsiveness across all pages",
+      ],
+      result: "Significant increase in ticket sales from both paid and organic traffic. Reduced drop-off during checkout. Cohesive, mobile-first experience across all 11 pages.",
+    },
   },
   {
-    num: "09",
+    num: "08",
     title: "Stucky Injury Law",
     category: "Web Design · Development · Local SEO",
     year: "2025",
-    desc: "Professional law firm website for a Dallas & Fort Worth personal injury attorney. Dedicated practice area pages (car accidents, truck accidents, wrongful death, and more), SEO-optimized content structure, case results, testimonials, and consultation lead forms — built to rank locally and convert visitors into clients.",
+    desc: "Professional law firm website for a Dallas & Fort Worth personal injury attorney. Dedicated practice area pages, SEO-optimized content, case results, testimonials, and consultation lead forms — built to rank locally and convert visitors into clients.",
     tags: ["WordPress", "Elementor", "Figma", "SEO", "Legal"],
     color: "bg-[#0A0F1A]",
     accent: "#B8912A",
     image: "/stucky-law.png",
     href: "https://stuckylaw.com",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Build a professional law firm website for a Dallas & Fort Worth personal injury attorney to generate consultation leads and improve local SEO visibility.",
+      built: [
+        "Dedicated practice area pages: personal injury, car accidents, truck accidents, motorcycle accidents, pedestrian accidents, wrongful death",
+        "SEO-optimized content structure with strong CTAs on every page",
+        "Case results and testimonials sections to build trust and credibility",
+        "Consultation lead forms integrated throughout the site",
+        "Clear navigation and authoritative visual design",
+      ],
+      result: "Professional law firm presence with a strong local SEO foundation and multiple lead capture touchpoints across all practice area pages.",
+    },
   },
   {
-    num: "10",
+    num: "09",
     title: "LBL Services",
-
-
     category: "Web Design · Development",
     year: "2025",
     desc: "Full design and development for an AI model development and training services company. Clean purple-accented UI, service showcase, team section, and contact form — built with WordPress and Elementor.",
@@ -148,11 +241,20 @@ const projects: Project[] = [
     image: "/lbl-services.png",
     href: "https://lbl-services.com/",
     filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Build a professional website for an AI model development and training services company to establish credibility and generate business inquiries.",
+      built: [
+        "Clean purple-accented design reflecting the AI and tech brand",
+        "Service showcase with clear value propositions for each offering",
+        "Team and about sections to build credibility",
+        "Contact and inquiry forms for lead generation",
+      ],
+      result: "Professional web presence establishing LBL Services as a credible AI training and model development partner.",
+    },
   },
   {
-    num: "11",
+    num: "10",
     title: "CoolAir Pro",
-
     category: "Web Development · AI-Powered",
     year: "2025",
     desc: "Full-stack HVAC contractor site for Dallas, TX — AI chatbot scoped strictly to HVAC queries, 3-step quote calculator, EN/ES toggle, membership plans, financing page, and an admin dashboard with lead management and CSV export.",
@@ -162,6 +264,68 @@ const projects: Project[] = [
     image: "/coolair-pro.png",
     href: "https://coolair-pro-xquy.vercel.app/",
     filters: ["Web Dev", "AI Automation"],
+    details: {
+      goal: "Build a full-stack HVAC contractor site for Dallas, TX that qualifies leads automatically and handles customer inquiries around the clock.",
+      built: [
+        "AI chatbot powered by Claude, scoped strictly to HVAC queries",
+        "3-step quote calculator for instant project estimates",
+        "Bilingual EN/ES toggle for Dallas's Spanish-speaking market",
+        "Membership plans and financing page",
+        "Admin dashboard with lead management and CSV export",
+      ],
+      result: "Live full-stack site with AI-powered lead qualification operating 24/7, plus a complete admin system for managing and exporting leads.",
+    },
+  },
+  {
+    num: "11",
+    title: "The Man Shop",
+    category: "Web Design · Development · Geo-Targeting",
+    year: "2024",
+    desc: "Six geo-targeted landing pages for a regional barbershop chain's advertising campaign. Each page served a specific store location with dynamic SMS offer delivery via Twilio, Google Maps integration, and GA4 tracking.",
+    tags: ["WordPress", "Elementor", "Twilio", "Google Analytics 4", "CRO"],
+    color: "bg-[#1A0000]",
+    accent: "#DC2626",
+    image: "/man-shop-offers.png",
+    href: "https://themanshopoffers.com/",
+    filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Launch a geo-fencing advertising campaign for a regional barbershop chain — six location-specific landing pages serving as digital touchpoints for targeted social media ads.",
+      built: [
+        "Six SEO-optimized landing pages, each tailored to a different store location",
+        "Mobile-first design ensuring fast load times for social ad traffic",
+        "Twilio integration for dynamic SMS delivery of offer codes",
+        "Google Maps integration per location for easy directions",
+        "Google Analytics 4 setup to track campaign performance and user behavior",
+        "Template-based development ensuring consistency and speed across all six pages",
+      ],
+      result: "All six landing pages delivered ahead of deadline. Fully mobile-optimized with fast load times, geo-targeted offer delivery via SMS, and GA4 capturing real campaign performance data.",
+    },
+  },
+  {
+    num: "12",
+    title: "Hidden Sauna Club",
+    category: "Web Design · Development · CMS",
+    year: "2025",
+    desc: "End-to-end Figma design and WordPress/Elementor build for a sauna and wellness brand. Pixel-perfect responsive UI, booking system integration, Klaviyo email automation, lead capture forms, and 1-on-1 client training for ongoing management.",
+    tags: ["WordPress", "Elementor", "Figma", "Klaviyo", "Booking System"],
+    color: "bg-[#0F0A00]",
+    accent: "#EA580C",
+    image: "/hidden-sauna-club.png",
+    href: "https://hiddensaunaclub.com/",
+    filters: ["Web Design", "Web Dev"],
+    details: {
+      goal: "Design and build an end-to-end website for a sauna and wellness brand — conversion-focused, booking-ready, and scalable with a marketing automation stack.",
+      built: [
+        "Strategic UI/UX design in Figma — conversion-focused layout and visual hierarchy",
+        "Pixel-perfect Figma to WordPress/Elementor build",
+        "Booking system integration with optimized user flow",
+        "Klaviyo integration for automated email marketing",
+        "Advanced lead capture forms setup",
+        "Fully mobile-first responsive design",
+        "1-on-1 client training for WordPress and Elementor management",
+      ],
+      result: "High-end wellness brand website with streamlined booking experience, marketing automation in place, and a client fully equipped to manage and scale the site independently.",
+    },
   },
 ];
 
@@ -191,6 +355,8 @@ export default function Projects() {
 
   const lightboxImages = lightbox?.images ?? (lightbox?.image ? [lightbox.image] : []);
   const isGallery = lightboxImages.length > 1;
+  const lightboxDetails = lightbox?.details ?? null;
+  const isCaseStudy = !!lightboxDetails && !isGallery;
 
   const prev = () => setGalleryIndex((i) => (i - 1 + lightboxImages.length) % lightboxImages.length);
   const next = () => setGalleryIndex((i) => (i + 1) % lightboxImages.length);
@@ -284,6 +450,11 @@ export default function Projects() {
                             {p.images.length} slides
                           </span>
                         )}
+                        {p.details && (
+                          <span className="font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-white/15 text-white border border-white/20">
+                            Case Study
+                          </span>
+                        )}
                         <span className="font-mono text-[10px] uppercase tracking-widest text-white/70">
                           {p.year}
                         </span>
@@ -374,83 +545,160 @@ export default function Projects() {
                 <X size={16} />
               </button>
 
-              {/* Image */}
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={galleryIndex}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.2 }}
-                  className="overflow-y-auto flex-1 min-h-0"
-                >
-                  <Image
-                    src={lightboxImages[galleryIndex]}
-                    alt={lightbox.title}
-                    width={1200}
-                    height={2000}
-                    className="w-full h-auto"
-                  />
-                </motion.div>
-              </AnimatePresence>
-
-              {/* Gallery nav */}
-              {isGallery && (
+              {/* Case study layout */}
+              {isCaseStudy ? (
                 <>
-                  <button
-                    onClick={prev}
-                    className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
-                    aria-label="Previous"
-                  >
-                    <ChevronLeft size={16} />
-                  </button>
-                  <button
-                    onClick={next}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
-                    aria-label="Next"
-                  >
-                    <ChevronRight size={16} />
-                  </button>
+                  {/* Fixed hero image */}
+                  <div className="relative h-56 shrink-0 overflow-hidden">
+                    <Image
+                      src={lightboxImages[0]}
+                      alt={lightbox.title}
+                      fill
+                      className="object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-b from-black/30 to-black/10" />
+                  </div>
+
+                  {/* Scrollable case study content */}
+                  <div className="flex-1 overflow-y-auto min-h-0 px-6 py-5 flex flex-col gap-5">
+                    {/* Header */}
+                    <div>
+                      <div className="flex items-start justify-between gap-4 mb-1">
+                        <p className="font-display font-bold text-text text-xl leading-tight">{lightbox.title}</p>
+                        <p className="font-mono text-[9px] uppercase tracking-widest text-muted shrink-0 mt-1.5">{lightbox.year}</p>
+                      </div>
+                      <p className="font-mono text-[9px] uppercase tracking-widest text-muted">{lightbox.category}</p>
+                    </div>
+
+                    {/* Goal */}
+                    <div className="bg-surface rounded-xl p-4">
+                      <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-2">Goal</p>
+                      <p className="font-sans text-sm text-text leading-relaxed">{lightboxDetails?.goal}</p>
+                    </div>
+
+                    {/* What I Built */}
+                    <div>
+                      <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-3">What I Built</p>
+                      <ul className="flex flex-col gap-2">
+                        {(lightboxDetails?.built ?? []).map((item, i) => (
+                          <li key={i} className="flex items-start gap-2.5 font-sans text-sm text-muted leading-relaxed">
+                            <span className="text-accent mt-0.5 shrink-0 font-bold">→</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Result */}
+                    <div className="bg-surface rounded-xl p-4">
+                      <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-2">Result</p>
+                      <p className="font-sans text-sm text-text leading-relaxed">{lightboxDetails?.result}</p>
+                    </div>
+                  </div>
+
+                  {/* Bottom bar */}
+                  <div className="px-6 py-4 bg-bg border-t border-theme shrink-0 flex items-center justify-between gap-4 flex-wrap">
+                    <div className="flex flex-wrap gap-1.5">
+                      {lightbox.tags.map((t) => (
+                        <span key={t} className="px-2.5 py-1 rounded-full bg-surface text-[10px] font-mono text-muted">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                    {lightbox.href && (
+                      <a
+                        href={lightbox.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-text text-bg font-sans text-xs font-medium hover:opacity-80 transition-opacity"
+                      >
+                        View Live <ArrowUpRight size={12} />
+                      </a>
+                    )}
+                  </div>
+                </>
+              ) : (
+                <>
+                  {/* Regular / gallery layout */}
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={galleryIndex}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-y-auto flex-1 min-h-0"
+                    >
+                      <Image
+                        src={lightboxImages[galleryIndex]}
+                        alt={lightbox.title}
+                        width={1200}
+                        height={2000}
+                        className="w-full h-auto"
+                      />
+                    </motion.div>
+                  </AnimatePresence>
+
+                  {/* Gallery nav */}
+                  {isGallery && (
+                    <>
+                      <button
+                        onClick={prev}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+                        aria-label="Previous"
+                      >
+                        <ChevronLeft size={16} />
+                      </button>
+                      <button
+                        onClick={next}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/60 transition-colors"
+                        aria-label="Next"
+                      >
+                        <ChevronRight size={16} />
+                      </button>
+                    </>
+                  )}
+
+                  {/* Footer */}
+                  <div className="p-5 bg-bg border-t border-theme shrink-0">
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <p className="font-display font-bold text-text text-lg leading-tight">{lightbox.title}</p>
+                      <p className="font-mono text-[9px] uppercase tracking-widest text-muted shrink-0 mt-1">
+                        {lightbox.year}
+                      </p>
+                    </div>
+                    <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-3">
+                      {isGallery
+                        ? GALLERY_LABELS[lightboxImages[galleryIndex]] ?? `${galleryIndex + 1} / ${lightboxImages.length}`
+                        : lightbox.category}
+                    </p>
+                    <p className="font-sans text-sm text-muted leading-relaxed mb-4">
+                      {lightbox.desc}
+                    </p>
+                    <div className="flex items-center justify-between gap-4 flex-wrap">
+                      <div className="flex flex-wrap gap-1.5">
+                        {lightbox.tags.map((t) => (
+                          <span key={t} className="px-2.5 py-1 rounded-full bg-surface text-[10px] font-mono text-muted">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      {lightbox.href && (
+                        <a
+                          href={lightbox.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-text text-bg font-sans text-xs font-medium hover:opacity-80 transition-opacity"
+                        >
+                          View Live <ArrowUpRight size={12} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </>
               )}
-
-              {/* Footer */}
-              <div className="p-5 bg-bg border-t border-theme shrink-0">
-                <div className="flex items-start justify-between gap-4 mb-2">
-                  <p className="font-display font-bold text-text text-lg leading-tight">{lightbox.title}</p>
-                  <p className="font-mono text-[9px] uppercase tracking-widest text-muted shrink-0 mt-1">
-                    {lightbox.year}
-                  </p>
-                </div>
-                <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-3">
-                  {isGallery
-                    ? GALLERY_LABELS[lightboxImages[galleryIndex]] ?? `${galleryIndex + 1} / ${lightboxImages.length}`
-                    : lightbox.category}
-                </p>
-                <p className="font-sans text-sm text-muted leading-relaxed mb-4">
-                  {lightbox.desc}
-                </p>
-                <div className="flex items-center justify-between gap-4 flex-wrap">
-                  <div className="flex flex-wrap gap-1.5">
-                    {lightbox.tags.map((t) => (
-                      <span key={t} className="px-2.5 py-1 rounded-full bg-surface text-[10px] font-mono text-muted">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                  {lightbox.href && (
-                    <a
-                      href={lightbox.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-text text-bg font-sans text-xs font-medium hover:opacity-80 transition-opacity"
-                    >
-                      View Live <ArrowUpRight size={12} />
-                    </a>
-                  )}
-                </div>
-              </div>
             </motion.div>
           </motion.div>
         )}
