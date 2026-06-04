@@ -97,6 +97,19 @@ const projects: Project[] = [
   },
   {
     num: "06",
+    title: "LBL Services",
+    category: "Web Design · Development",
+    year: "2025",
+    desc: "Full design and development for an AI model development and training services company. Clean purple-accented UI, service showcase, team section, and contact form — built with WordPress and Elementor.",
+    tags: ["WordPress", "Elementor", "UI/UX", "Figma"],
+    color: "bg-[#0D0D1A]",
+    accent: "#7C3AED",
+    image: "/lbl-services.png",
+    href: "https://lbl-services.com/",
+    filters: ["Web Design", "Web Dev"],
+  },
+  {
+    num: "07",
     title: "CoolAir Pro",
 
     category: "Web Development · AI-Powered",
