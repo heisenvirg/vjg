@@ -378,6 +378,30 @@ const projects: Project[] = [
       result: "Reduced manual follow-up work to near zero. Every lead and client is nurtured automatically — hot leads trigger internal team alerts, cold leads stay in drip sequences, and campaign performance is fully trackable.",
     },
   },
+  {
+    num: "15",
+    title: "Doula Business Sales Funnel",
+    category: "Web Design · GoHighLevel · Sales Funnel",
+    year: "2025",
+    desc: "End-to-end sales funnel built in GoHighLevel for a doula coaching brand — bold dark purple landing page with video hero, tools and training offers, and full automation integration to capture and nurture leads through a multi-step funnel.",
+    tags: ["GoHighLevel", "Sales Funnel", "Web Design", "Automation"],
+    color: "bg-[#1A0028]",
+    accent: "#A855F7",
+    image: "/doulas-sales-funnel.png",
+    href: "https://app.winwavesolutions.com/v2/preview/JHCN7rDRn1DJIFJal78h",
+    filters: ["Web Design", "AI Automation"],
+    details: {
+      goal: "Design and build a complete sales funnel for a doula coaching brand — converting cold visitors into enrolled clients through a professional, high-converting multi-step page sequence with backend automation.",
+      built: [
+        "Bold dark purple landing page with video hero and strong CTA — designed to stop the scroll",
+        "Multi-step funnel pages: opt-in, sales page, order form, and thank you page",
+        "Automation integration for lead capture, tagging, and follow-up sequences",
+        "Mobile-first responsive design optimized for social media traffic",
+        "GoHighLevel funnel builder with custom design and branding applied throughout",
+      ],
+      result: "Professional sales funnel live in GoHighLevel — brand-consistent, mobile-optimized, and fully automated from lead capture to follow-up.",
+    },
+  },
 ];
 
 const GALLERY_LABELS: Record<string, string> = {
