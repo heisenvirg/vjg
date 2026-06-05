@@ -263,7 +263,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "B2B", "E-Commerce", "Pharma"],
     color: "bg-[#041224]",
     accent: "#3B82F6",
-    image: "/buildapill-mockup.png",
+    image: "/build-a-pill-v05-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a trustworthy B2B e-commerce platform for a pharmaceutical excipient manufacturer — science-forward, professional, and easy to navigate for industry buyers.",
@@ -289,7 +289,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "SaaS", "Dark Theme", "AI"],
     color: "bg-[#0A0A0A]",
     accent: "#6366F1",
-    image: "/cusrich-ai-mockup.png",
+    image: "/cusrichai-v05-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a dark-theme SaaS website for an AI-powered customer advocacy platform — data-forward, integration-heavy, and targeted at growth-oriented e-commerce brands.",
@@ -314,7 +314,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Wellness", "Essential Oils"],
     color: "bg-[#0A140A]",
     accent: "#4ADE80",
-    image: "/dreaming-earth-mockup.png",
+    image: "/dreaming-earth-botanicals-v03-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a calm, nature-forward e-commerce site for an essential oils brand offering both retail and wholesale — built to educate as much as it sells.",
@@ -340,7 +340,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Health", "Supplements"],
     color: "bg-[#071209]",
     accent: "#22C55E",
-    image: "/earth-energy-mockup.png",
+    image: "/earth-energy-v02-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a conversion-focused supplement e-commerce site for a superfoods brand — science-backed, lifestyle-aspirational, and built to drive product sales.",
@@ -366,7 +366,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "Retro Design", "Service Business", "Floral"],
     color: "bg-[#1A0808]",
     accent: "#F97316",
-    image: "/for-real-flowers-mockup.png",
+    image: "/for-real-flowers-v03-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a personality-forward website for a floral and landscaping business — bold, playful, and immediately memorable while clearly communicating services and driving bookings.",
@@ -390,7 +390,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "Professional Services", "Legal", "Non-Profit"],
     color: "bg-[#081410]",
     accent: "#16A34A",
-    image: "/austin-drc-mockup.png",
+    image: "/austindrc.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a professional, approachable website for a legal mediation center in Travis County — builds trust quickly and makes services easy to understand for non-legal audiences.",
@@ -415,7 +415,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Beauty", "Waxing"],
     color: "bg-[#1A0010]",
     accent: "#EC4899",
-    image: "/kimika-mockup.png",
+    image: "/kimika-v03-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a premium beauty e-commerce site for a professional waxing brand bringing salon-quality results home — credible, aspirational, and easy to shop.",
@@ -440,7 +440,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Outdoor", "Family"],
     color: "bg-[#081208]",
     accent: "#15803D",
-    image: "/lobsty-mockup.png",
+    image: "/lobsty-website-v02-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design an outdoor lifestyle e-commerce site for a family-friendly bike clamp brand — active, approachable, and built around the joy of family adventures.",
@@ -466,7 +466,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Artisan", "Greek Brand"],
     color: "bg-[#14100A]",
     accent: "#B45309",
-    image: "/milioti-olive-oil-mockup.png",
+    image: "/milioti-olive-oil-v04-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a premium dual-brand e-commerce site for a Greek olive oil producer selling both food-grade oil and olive oil cosmetics — artisan quality, Mediterranean heritage.",
@@ -491,7 +491,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "Law Firm", "Professional Services"],
     color: "bg-[#060E08]",
     accent: "#166534",
-    image: "/smith-malek-mockup.png",
+    image: "/smith+malek-v02-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a multi-state law firm website that projects authority and trust — serious without being cold, accessible without being corporate and intimidating.",
@@ -517,7 +517,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "Hospitality", "Craft Brand", "Events"],
     color: "bg-[#040C18]",
     accent: "#B45309",
-    image: "/tarpon-springs-mockup.png",
+    image: "/tarpon-springs-distillery-v04-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design an immersive brand site for a craft distillery — storytelling-first, with space to showcase spirits, events, and recipes while driving tour bookings.",
@@ -543,7 +543,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "Vacation Rental", "Luxury", "Travel"],
     color: "bg-[#061208]",
     accent: "#15803D",
-    image: "/villa-tortuga-mockup.png",
+    image: "/villa-tortuga-v06-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a luxury tropical vacation rental site for a multi-villa property in Playa Guiones, Nosara, Costa Rica — natural, aspirational, and built to drive direct bookings.",
