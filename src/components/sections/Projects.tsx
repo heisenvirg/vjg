@@ -783,17 +783,26 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mb-6"
+            className="mb-6 flex items-end justify-between gap-4"
           >
-            <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-3">
-              My Work
-            </p>
-            <h2
-              className="font-display font-bold text-text"
-              style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-3">
+                My Work
+              </p>
+              <h2
+                className="font-display font-bold text-text"
+                style={{ fontSize: "clamp(1.75rem, 4vw, 2.75rem)" }}
+              >
+                Latest Projects
+              </h2>
+            </div>
+            <a
+              href="#contact"
+              className="shrink-0 hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-bg shadow-card hover:shadow-card-hover font-sans text-sm text-muted hover:text-text transition-all border border-theme"
             >
-              Latest Projects
-            </h2>
+              <span>Have a project in mind?</span>
+              <span className="text-text font-medium">Let&apos;s talk →</span>
+            </a>
           </motion.div>
 
           {/* Filter tabs */}
@@ -928,22 +937,6 @@ export default function Projects() {
             </motion.div>
           )}
 
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="mt-10 text-center"
-          >
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-bg shadow-card hover:shadow-card-hover font-sans text-sm text-muted hover:text-text transition-all border border-theme"
-            >
-              <span>Have a project in mind?</span>
-              <span className="text-text font-medium">Let&apos;s talk →</span>
-            </a>
-          </motion.div>
         </div>
       </section>
 
