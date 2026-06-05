@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, X, ChevronLeft, ChevronRight } from "lucide-react";
 
-type FilterKey = "All" | "Web Design" | "Web Dev" | "AI Automation";
+type FilterKey = "All" | "Mockup" | "Web Dev" | "AI Automation";
 
 interface ProjectDetails {
   goal: string;
@@ -30,7 +30,7 @@ interface Project {
   details?: ProjectDetails;
 }
 
-const FILTERS: FilterKey[] = ["All", "Web Design", "Web Dev", "AI Automation"];
+const FILTERS: FilterKey[] = ["All", "Mockup", "Web Dev", "AI Automation"];
 
 const projects: Project[] = [
   {
@@ -44,7 +44,7 @@ const projects: Project[] = [
     accent: "#C9A96E",
     image: "/lumiere-collection.png",
     href: "https://lumiere-collection.vercel.app/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Build a luxury villa rental platform for 5 private properties across Tulum, Lisbon, Saint-Tropez, Santorini, and Maui — designed to drive direct bookings and eliminate OTA platform fees.",
       built: [
@@ -68,7 +68,7 @@ const projects: Project[] = [
     accent: "#C9A052",
     image: "/sunset-villa.png",
     href: "https://vacation-rental-lrom.vercel.app/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Help a Miami beachfront villa owner drive direct bookings and reduce reliance on Airbnb and VRBO platform fees.",
       built: [
@@ -120,7 +120,7 @@ const projects: Project[] = [
     accent: "#EF4444",
     image: "/birdhouse-wings.png",
     href: "https://birdhousewings.com/en/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Build a full website for a multi-location restaurant chain in Quebec, Canada — bilingual, brand-forward, and capable of handling online reservations and franchise inquiries.",
       built: [
@@ -144,7 +144,7 @@ const projects: Project[] = [
     accent: "#86BC25",
     image: "/deloitte-digital.png",
     href: "https://www.deloittedigital.com/us/en.html",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Design and development work for Deloitte Digital's US web presence — enterprise-grade digital experience for one of the world's top digital transformation consultancies.",
       built: [
@@ -168,7 +168,7 @@ const projects: Project[] = [
     accent: "#22C55E",
     image: "/oc-fitness-coach.png",
     href: "https://ocfitnesscoach.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Safely migrate a high-ranking WordPress site from a private server to HostGator without losing SEO performance, then modernize the design to improve conversions.",
       built: [
@@ -192,7 +192,7 @@ const projects: Project[] = [
     accent: "#F97316",
     image: "/texas-fruit-festival.png",
     href: "https://texasfruitfestival.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Increase ticket sales from Instagram and Facebook ad traffic by redesigning the landing page and streamlining the ticket purchase flow.",
       built: [
@@ -216,7 +216,7 @@ const projects: Project[] = [
     accent: "#B8912A",
     image: "/stucky-law.png",
     href: "https://stuckylaw.com",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Build a professional law firm website for a Dallas & Fort Worth personal injury attorney to generate consultation leads and improve local SEO visibility.",
       built: [
@@ -240,7 +240,7 @@ const projects: Project[] = [
     accent: "#7C3AED",
     image: "/lbl-services.png",
     href: "https://lbl-services.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Build a professional website for an AI model development and training services company to establish credibility and generate business inquiries.",
       built: [
@@ -287,7 +287,7 @@ const projects: Project[] = [
     accent: "#DC2626",
     image: "/man-shop-offers.png",
     href: "https://themanshopoffers.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Launch a geo-fencing advertising campaign for a regional barbershop chain — six location-specific landing pages serving as digital touchpoints for targeted social media ads.",
       built: [
@@ -312,7 +312,7 @@ const projects: Project[] = [
     accent: "#EA580C",
     image: "/hidden-sauna-club.png",
     href: "https://hiddensaunaclub.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Design and build an end-to-end website for a sauna and wellness brand — conversion-focused, booking-ready, and scalable with a marketing automation stack.",
       built: [
@@ -338,7 +338,7 @@ const projects: Project[] = [
     accent: "#0EA5E9",
     image: "/turks-caicos-resort-guide.png",
     href: "https://turksandcaicosresortguide.com/",
-    filters: ["Web Design", "Web Dev"],
+    filters: ["Web Dev"],
     details: {
       goal: "Migrate a travel discovery platform from Loveable to WordPress — giving the client full content control, a scalable structure, and custom travel planning features that Loveable couldn't support.",
       built: [
@@ -389,7 +389,7 @@ const projects: Project[] = [
     accent: "#A855F7",
     image: "/doulas-sales-funnel.png",
     href: "https://app.winwavesolutions.com/v2/preview/JHCN7rDRn1DJIFJal78h",
-    filters: ["Web Design", "AI Automation"],
+    filters: ["AI Automation"],
     details: {
       goal: "Design and build a complete sales funnel for a doula coaching brand — converting cold visitors into enrolled clients through a professional, high-converting multi-step page sequence with backend automation.",
       built: [
