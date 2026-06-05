@@ -353,6 +353,31 @@ const projects: Project[] = [
       result: "Scalable travel platform on WordPress with simplified content management, custom discovery tools, room comparison, and a live booking integration — giving the client full ownership of the site.",
     },
   },
+  {
+    num: "14",
+    title: "Email Follow-Up Automation",
+    category: "AI Automation · GoHighLevel · CRM",
+    year: "2025",
+    desc: "Multi-step email follow-up workflow in GoHighLevel for nurturing leads and existing clients. Branch logic splits by intent (Positive, Not Positive, Not Replied), with timed wait steps, drip sequences, internal notifications, and a secondary email path — reducing manual follow-ups and improving conversion rates.",
+    tags: ["GoHighLevel", "CRM", "Email Automation", "Workflow", "Lead Nurture"],
+    color: "bg-[#0D0018]",
+    accent: "#7C3AED",
+    image: "/ghl-email-followup.png",
+    filters: ["AI Automation"],
+    details: {
+      goal: "Automate the entire email follow-up process in GoHighLevel for both new leads and existing clients — eliminating manual outreach and ensuring every contact gets the right message at the right time.",
+      built: [
+        "Multi-step follow-up workflow triggered by user actions and behavior",
+        "3-way branch logic: Positive/Yes intent, Not Positive, and Not Replied paths",
+        "Wait step with timed delays before sending follow-up emails to warm leads",
+        "Drip Mode for non-replying contacts — keeps the sequence alive without spamming",
+        "Email replied path with internal notification to alert the team of hot leads",
+        "Secondary email (Email 2) for continued nurturing of non-engaged contacts",
+        "Wait 1 day for contact reply step before escalating to the next action",
+      ],
+      result: "Reduced manual follow-up work to near zero. Every lead and client is nurtured automatically — hot leads trigger internal team alerts, cold leads stay in drip sequences, and campaign performance is fully trackable.",
+    },
+  },
 ];
 
 const GALLERY_LABELS: Record<string, string> = {
