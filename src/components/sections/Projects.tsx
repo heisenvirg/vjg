@@ -238,7 +238,7 @@ const projects: Project[] = [
     tags: ["Figma", "UI/UX", "E-Commerce", "Baby Fashion"],
     color: "bg-[#1A1510]",
     accent: "#C9A96E",
-    image: "/atlas-grey-mockup.png",
+    image: "/atlas-grey-v02-latest.png",
     filters: ["Mockup"],
     details: {
       goal: "Design a minimal, editorial e-commerce experience for a neutral baby clothing brand — warm and premium without being loud, built to convert on mobile and desktop.",
