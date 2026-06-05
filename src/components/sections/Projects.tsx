@@ -362,7 +362,7 @@ const projects: Project[] = [
     tags: ["GoHighLevel", "CRM", "Email Automation", "Workflow", "Lead Nurture"],
     color: "bg-[#0D0018]",
     accent: "#7C3AED",
-    image: "/ghl-email-followup.png",
+    image: "/gohighlevel-email-follow-up.png",
     filters: ["AI Automation"],
     details: {
       goal: "Automate the entire email follow-up process in GoHighLevel for both new leads and existing clients — eliminating manual outreach and ensuring every contact gets the right message at the right time.",
