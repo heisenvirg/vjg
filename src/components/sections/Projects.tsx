@@ -230,6 +230,337 @@ const projects: Project[] = [
     },
   },
   {
+    num: "M01",
+    title: "Atlas Grey",
+    category: "UI/UX Design · E-Commerce · Baby Fashion",
+    year: "2024",
+    desc: "Minimal e-commerce mockup for a neutral baby clothing brand — cream editorial aesthetic with lifestyle photography, new looks grid, essential items feature, and press coverage row.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Baby Fashion"],
+    color: "bg-[#1A1510]",
+    accent: "#C9A96E",
+    image: "/atlas-grey-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a minimal, editorial e-commerce experience for a neutral baby clothing brand — warm and premium without being loud, built to convert on mobile and desktop.",
+      built: [
+        "Clean navigation with Organic and Blog sections",
+        "Hero with lifestyle photography and soft editorial headline",
+        "New Looks product grid with minimal pricing cards",
+        "Essential Items for Hot Climates editorial feature section",
+        "Shop By Category with lifestyle imagery",
+        "Press coverage bar: Vogue, People, domino, Travel+Leisure, Mother, Forbes",
+        "Customer testimonials and blog/editorial section",
+      ],
+      result: "Minimal Scandinavian-inspired aesthetic — neutral cream palette, generous white space, editorial photography, and clean typography designed to feel premium without being cold.",
+    },
+  },
+  {
+    num: "M02",
+    title: "BuildaPill",
+    category: "UI/UX Design · B2B E-Commerce · Pharma",
+    year: "2024",
+    desc: "B2B pharmaceutical e-commerce mockup for a tablet excipient manufacturer — science-forward blue and white design with product catalog, All-In-One Premium feature, Tablet Builder tool, and trust sections.",
+    tags: ["Figma", "UI/UX", "B2B", "E-Commerce", "Pharma"],
+    color: "bg-[#041224]",
+    accent: "#3B82F6",
+    image: "/buildapill-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a trustworthy B2B e-commerce platform for a pharmaceutical excipient manufacturer — science-forward, professional, and easy to navigate for industry buyers.",
+      built: [
+        "Dual CTA hero with credibility headline and product visual",
+        "Product catalog: All-In-One White and Blue excipient variants",
+        "All-In-One Premium feature with Functionality / Compatibility / Safety pillars",
+        "Innovative Pill Pressing Excellence content section",
+        "Science-backed products grid with star ratings",
+        "Tablet Builder interactive section",
+        "Shop by Category navigation",
+        "Quality trust section and Connect with Support form",
+      ],
+      result: "Clean blue-and-white pharmaceutical aesthetic — radiates precision and quality. Layout balances scientific credibility with accessible product discovery for B2B buyers.",
+    },
+  },
+  {
+    num: "M03",
+    title: "CusrichAI",
+    category: "UI/UX Design · SaaS · AI Platform",
+    year: "2024",
+    desc: "Dark-theme SaaS mockup for an AI-powered customer advocacy platform — dashboard hero, integration logos, feature grid, platform comparison table, and two-sided value messaging for growth-oriented e-commerce brands.",
+    tags: ["Figma", "UI/UX", "SaaS", "Dark Theme", "AI"],
+    color: "bg-[#0A0A0A]",
+    accent: "#6366F1",
+    image: "/cusrich-ai-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a dark-theme SaaS website for an AI-powered customer advocacy platform — data-forward, integration-heavy, and targeted at growth-oriented e-commerce brands.",
+      built: [
+        "Hero with live platform dashboard preview and dual CTAs (Request Demo + Install Now)",
+        "Integration logos: Recharge, Arc Shift, GlassHouse, Prescriptiv, CajaMetaverse",
+        "4-feature grid: AI customer insights, automated flows, personalized rules engine, data ownership",
+        "Social proof ticker with 30+ brand logo strip",
+        "Customer Data Platform vs Customer Experience Platform comparison section",
+        "Two-sided value messaging: We're a good fit / You're a good fit",
+        "Newsletter and final demo request CTA",
+      ],
+      result: "Dark professional SaaS aesthetic with data visualization emphasis — designed to speak to technical buyers and growth marketers at the same time.",
+    },
+  },
+  {
+    num: "M04",
+    title: "Dreaming Earth",
+    category: "UI/UX Design · E-Commerce · Wellness",
+    year: "2024",
+    desc: "Sage green wellness e-commerce mockup for an essential oils brand with retail and wholesale paths — sourcing story, product solutions grid, countdown sale section, FAQ, and testimonials.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Wellness", "Essential Oils"],
+    color: "bg-[#0A140A]",
+    accent: "#4ADE80",
+    image: "/dreaming-earth-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a calm, nature-forward e-commerce site for an essential oils brand offering both retail and wholesale — built to educate as much as it sells.",
+      built: [
+        "Split hero with Retail and Wholesale paths",
+        "Bestsellers product carousel",
+        "How We Source editorial section with lifestyle photography",
+        "Essential Oils & Blends category section",
+        "Product solutions grid: Pure Taste, Serums, Low Energy, Balance Reset, Ache & Pain, Skin Care",
+        "Browse Collections and Apply for Wholesale access CTAs",
+        "On Sale countdown timer section",
+        "Our Story narrative, testimonials slider, and FAQ accordion",
+      ],
+      result: "Sage green and warm neutral palette — botanical, calming, and trustworthy. The design educates buyers on sourcing and benefits before pushing the sale.",
+    },
+  },
+  {
+    num: "M05",
+    title: "Earth Energy",
+    category: "UI/UX Design · E-Commerce · Supplements",
+    year: "2024",
+    desc: "Green supplement e-commerce mockup for a superfoods brand — popular products carousel, nature's power proof pillars, Raw Reds product spotlight, Instagram shop integration, and testimonials.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Health", "Supplements"],
+    color: "bg-[#071209]",
+    accent: "#22C55E",
+    image: "/earth-energy-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a conversion-focused supplement e-commerce site for a superfoods brand — science-backed, lifestyle-aspirational, and built to drive product sales.",
+      built: [
+        "Split hero with product lineup and social proof (14,293 customers)",
+        "Popular items carousel: Fruits & Veggies, Joint Support, Power Greens, Raw Reds",
+        "Nutrition You Can Trust section with certification icons",
+        "Nature's Power feature: Immune Boosting, Convenient Form, Real Results, Personal Mission",
+        "Superfood-Powered Wellness feature section",
+        "Earth Energy Difference with 4-pillar proof icons",
+        "Raw Reds Energy Elixir product spotlight with pricing",
+        "Shop Our Instagram feed and Testimonials from Earth Advocates",
+      ],
+      result: "Fresh green-and-white palette with clean typography — health-conscious but accessible. Balances scientific credibility with everyday wellness positioning.",
+    },
+  },
+  {
+    num: "M06",
+    title: "For Real Flowers",
+    category: "UI/UX Design · Service Business · Retro",
+    year: "2024",
+    desc: "Retro playful website mockup for a floral design and landscaping business — bold coral and navy palette, illustrated botanical shapes, services split, full-service wedding package, and image gallery.",
+    tags: ["Figma", "UI/UX", "Retro Design", "Service Business", "Floral"],
+    color: "bg-[#1A0808]",
+    accent: "#F97316",
+    image: "/for-real-flowers-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a personality-forward website for a floral and landscaping business — bold, playful, and immediately memorable while clearly communicating services and driving bookings.",
+      built: [
+        "Bold retro hero with illustrated botanical shapes and display typography",
+        "Services split: Landscaping and Floral Design with circular photo treatment",
+        "Full-Service Wedding Package feature section with editorial copywriting",
+        "Image gallery carousel with Book an Appointment CTA",
+        "Newsletter with 10% first order discount incentive",
+        "Marquee footer ticker with brand name repetition",
+      ],
+      result: "Retro-playful design language — coral orange, muted pink, dark navy, and mustard yellow. Custom illustrated botanical elements make it instantly stand out in a saturated floral market.",
+    },
+  },
+  {
+    num: "M07",
+    title: "Austin DRC",
+    category: "UI/UX Design · Professional Services · Legal",
+    year: "2024",
+    desc: "Professional mediation center website mockup — sage green corporate palette, service cards for community mediation, civil litigation and facilitation, step-by-step access guide, FAQ, and free consultation form.",
+    tags: ["Figma", "UI/UX", "Professional Services", "Legal", "Non-Profit"],
+    color: "bg-[#081410]",
+    accent: "#16A34A",
+    image: "/austin-drc-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a professional, approachable website for a legal mediation center in Travis County — builds trust quickly and makes services easy to understand for non-legal audiences.",
+      built: [
+        "Split hero: strong headline + team photo with Contact CTA",
+        "Association/partner logos bar for instant credibility",
+        "Service cards: Community Mediation, Civil Litigation, Facilitation Services",
+        "Step-by-step access guide: Contact → Consultation → Participate → Follow Up",
+        "Join Our Mediation Training feature section",
+        "FAQ accordion with 5 key questions",
+        "Community impact CTA and Contact form with address and location",
+      ],
+      result: "Professional sage green palette — communicates trust, growth, and resolution without the intimidating corporate law firm aesthetic. Designed for community accessibility.",
+    },
+  },
+  {
+    num: "M08",
+    title: "Kimika",
+    category: "UI/UX Design · E-Commerce · Beauty",
+    year: "2024",
+    desc: "Premium beauty e-commerce mockup for a professional waxing products brand — soft pink aesthetic, 25-year credibility bar, product categories, Made in Canada story, testimonials, and blog.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Beauty", "Waxing"],
+    color: "bg-[#1A0010]",
+    accent: "#EC4899",
+    image: "/kimika-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a premium beauty e-commerce site for a professional waxing brand bringing salon-quality results home — credible, aspirational, and easy to shop.",
+      built: [
+        "Hero with lifestyle model photography and bold brand headline",
+        "25 Years credibility bar with certifications: Cruelty Free, Vegan, Paraben Free, Eco-Friendly, All Skin Types, Microwaveable",
+        "Most Popular Products carousel with Quick View",
+        "Shop by Category grid: Bestsellers, Mini, Strips, Body Products, Accessories, Wax Bundles",
+        "Proudly Made in Canada brand story section",
+        "Customer testimonials grid with star ratings",
+        "Latest News blog section and newsletter subscription",
+      ],
+      result: "Soft pink and white beauty aesthetic — clean, feminine, and professional. Balances clinical credibility of a professional product with the warmth of a consumer brand.",
+    },
+  },
+  {
+    num: "M09",
+    title: "Lobsty",
+    category: "UI/UX Design · E-Commerce · Outdoor",
+    year: "2024",
+    desc: "Family outdoor e-commerce mockup for a kids bike clamp brand — fresh green lifestyle aesthetic, product category grid, family testimonials, promotional sale section, and active parenting CTA.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Outdoor", "Family"],
+    color: "bg-[#081208]",
+    accent: "#15803D",
+    image: "/lobsty-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design an outdoor lifestyle e-commerce site for a family-friendly bike clamp brand — active, approachable, and built around the joy of family adventures.",
+      built: [
+        "Hero with outdoor family lifestyle photography and primary product feature",
+        "Shop by Category navigation with visual icons",
+        "Product grid: Blockaddy, Playllner, ToyHaul, FunCarry, Jaxkin Journey, Bikedall Pro clamps",
+        "Partner logos bar: Perfect for families who love biking, hiking, and exploring nature",
+        "Daily Outdoors Essentials product section",
+        "15% Sale promotional banner",
+        "Shop the Look lifestyle editorial section",
+        "Customer reviews grid and Latest News blog",
+      ],
+      result: "Fresh green and white palette with active family imagery — trustworthy and adventure-forward without being extreme-sports intimidating. Built for active parents.",
+    },
+  },
+  {
+    num: "M10",
+    title: "Milioti Olive Oil",
+    category: "UI/UX Design · E-Commerce · Artisan Food",
+    year: "2024",
+    desc: "Dual-brand Greek olive oil e-commerce mockup — warm neutral tones, split olive oil and cosmetics shop paths, Our Story section, featured products in EUR, quality benefit pillars, and testimonials.",
+    tags: ["Figma", "UI/UX", "E-Commerce", "Artisan", "Greek Brand"],
+    color: "bg-[#14100A]",
+    accent: "#B45309",
+    image: "/milioti-olive-oil-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a premium dual-brand e-commerce site for a Greek olive oil producer selling both food-grade oil and olive oil cosmetics — artisan quality, Mediterranean heritage.",
+      built: [
+        "Split hero: E-Shop Olive Oil / E-Shop Olive Oil Cosmetics paths with full-bleed photography",
+        "Our Story editorial section with farm and production photography",
+        "Partner and stockist logos: hofbar, Sp. Travels EE, Memories, ASTIR",
+        "Featured Products carousel with EUR pricing",
+        "3-column quality benefits: Quality Olive Oil, Fusion Flavors, Taste The Difference",
+        "Customer Testimonials slider",
+        "Discover Our Exquisite Products CTA and newsletter subscription",
+      ],
+      result: "Warm beige and olive green palette with serif typography — evokes Mediterranean farmstead quality and artisan heritage. Dual-brand structure keeps food and cosmetics distinct while unified.",
+    },
+  },
+  {
+    num: "M11",
+    title: "Smith + Malek Attorneys",
+    category: "UI/UX Design · Law Firm · Multi-State",
+    year: "2024",
+    desc: "Multi-state law firm website mockup — dark forest green authority aesthetic, practice areas carousel, awards bar, values section, four office location cards, and free consultation form.",
+    tags: ["Figma", "UI/UX", "Law Firm", "Professional Services"],
+    color: "bg-[#060E08]",
+    accent: "#166534",
+    image: "/smith-malek-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a multi-state law firm website that projects authority and trust — serious without being cold, accessible without being corporate and intimidating.",
+      built: [
+        "Full-bleed team conference room hero with bold overlapping headline",
+        "Mission statement: We will be a force of justice for the world",
+        "Practice Areas carousel: Corporate, Healthcare, Real Estate",
+        "Awards credibility bar: Empowering Women, Leaders in Law, Women of the Year",
+        "Our Values section",
+        "Office Locations grid: North Idaho, Boise, Spokane, Salt Lake City",
+        "Client testimonials and Ready to Work With Us CTA",
+        "Free Consultation contact form",
+      ],
+      result: "Dark forest green, cream, and gold palette — conveys stability, authority, and justice. Real team photography and values-led messaging humanize a serious industry.",
+    },
+  },
+  {
+    num: "M12",
+    title: "Tarpon Springs Distillery",
+    category: "UI/UX Design · Craft Distillery · Events",
+    year: "2024",
+    desc: "Craft distillery brand site mockup — navy rustic aesthetic, storytelling sections, whiskey tasting notes, upcoming events grid, spirit-based recipes by category, and Book a Tour CTA.",
+    tags: ["Figma", "UI/UX", "Hospitality", "Craft Brand", "Events"],
+    color: "bg-[#040C18]",
+    accent: "#B45309",
+    image: "/tarpon-springs-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design an immersive brand site for a craft distillery — storytelling-first, with space to showcase spirits, events, and recipes while driving tour bookings.",
+      built: [
+        "Full-bleed hero with distillery atmosphere photography and Book a Tour + Shop Our Spirits CTAs",
+        "Discover the Art of Distilling editorial section with barrel aging imagery",
+        "Immersive media/video experience section",
+        "Spirits showcase: Gambling Goods Whiskey with full tasting notes (size, strength, ABV, bitterness, color)",
+        "Legacy and production story sections",
+        "Upcoming Events cards with dates",
+        "Spirit-Based Recipes section by category",
+        "Newsletter subscription and Book a Tour final CTA",
+      ],
+      result: "Navy blue, cream, and warm wood tones — rustic craft heritage meets modern artisan branding. Storytelling-first design prioritizes sensory anticipation to drive visits and product discovery.",
+    },
+  },
+  {
+    num: "M13",
+    title: "Villa Tortuga",
+    category: "UI/UX Design · Vacation Rental · Costa Rica",
+    year: "2024",
+    desc: "Luxury tropical vacation rental mockup for a multi-villa property in Playa Guiones, Nosara — nature-forward greens, villa listings with Book Now CTAs, hidden gem destination content, and direct booking form.",
+    tags: ["Figma", "UI/UX", "Vacation Rental", "Luxury", "Travel"],
+    color: "bg-[#061208]",
+    accent: "#15803D",
+    image: "/villa-tortuga-mockup.png",
+    filters: ["Mockup"],
+    details: {
+      goal: "Design a luxury tropical vacation rental site for a multi-villa property in Playa Guiones, Nosara, Costa Rica — natural, aspirational, and built to drive direct bookings.",
+      built: [
+        "Full-bleed tropical property hero with brand headline and Book Now CTA",
+        "Villa listings with individual Book Now buttons: Casa Percano, Casa Tortuga, Suite del Mar",
+        "Discover Our Exclusive Collection of Luxurious Villas gallery section",
+        "Guest testimonials section",
+        "Exclusive Room Deals promotional section",
+        "Uncover The Hidden Gem of Nosara — destination content with activity icons",
+        "Comprehensive villa tour visual section",
+        "Contact form with Google Maps integration and property manager details",
+      ],
+      result: "Tropical green and natural sand tones with lush photography — communicates exclusivity and eco-luxury without feeling overproduced. Designed to convert destination-curious visitors into direct bookers.",
+    },
+  },
+  {
     num: "09",
     title: "LBL Services",
     category: "Web Design · Development",
@@ -387,7 +718,7 @@ const projects: Project[] = [
     tags: ["GoHighLevel", "Sales Funnel", "Web Design", "Automation"],
     color: "bg-[#1A0028]",
     accent: "#A855F7",
-    image: "/doulas-sales-funnel.png",
+    image: "/ghl.png",
     href: "https://app.winwavesolutions.com/v2/preview/JHCN7rDRn1DJIFJal78h",
     filters: ["AI Automation"],
     details: {
@@ -431,7 +762,8 @@ export default function Projects() {
   const lightboxImages = lightbox?.images ?? (lightbox?.image ? [lightbox.image] : []);
   const isGallery = lightboxImages.length > 1;
   const lightboxDetails = lightbox?.details ?? null;
-  const isCaseStudy = !!lightboxDetails && !isGallery;
+  const isMockup = lightbox?.filters.includes("Mockup") ?? false;
+  const isCaseStudy = !!lightboxDetails && !isGallery && !isMockup;
 
   const prev = () => setGalleryIndex((i) => (i - 1 + lightboxImages.length) % lightboxImages.length);
   const next = () => setGalleryIndex((i) => (i + 1) % lightboxImages.length);
@@ -608,7 +940,7 @@ export default function Projects() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
               transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-              className="relative w-full max-w-4xl max-h-[90vh] bg-bg rounded-2xl overflow-hidden shadow-card-hover flex flex-col"
+              className={`relative w-full ${isMockup ? "max-w-5xl" : "max-w-4xl"} max-h-[90vh] bg-bg rounded-2xl overflow-hidden shadow-card-hover flex flex-col`}
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close */}
@@ -620,8 +952,78 @@ export default function Projects() {
                 <X size={16} />
               </button>
 
-              {/* Case study layout */}
-              {isCaseStudy ? (
+              {/* Mockup two-column layout */}
+              {isMockup ? (
+                <div className="flex-1 flex flex-col sm:flex-row overflow-hidden min-h-0">
+                  {/* Left: scrollable full-page mockup */}
+                  <div className="h-52 sm:h-auto sm:w-[42%] overflow-y-auto border-b sm:border-b-0 sm:border-r border-theme shrink-0">
+                    {lightboxImages[0] && (
+                      <Image
+                        src={lightboxImages[0]}
+                        alt={lightbox.title}
+                        width={720}
+                        height={6000}
+                        className="w-full h-auto"
+                      />
+                    )}
+                  </div>
+                  {/* Right: project info */}
+                  <div className="flex-1 flex flex-col min-h-0 overflow-hidden">
+                    <div className="flex-1 overflow-y-auto px-6 py-5 flex flex-col gap-5">
+                      <div>
+                        <div className="flex items-start justify-between gap-4 mb-1">
+                          <p className="font-display font-bold text-text text-xl leading-tight">{lightbox.title}</p>
+                          <p className="font-mono text-[9px] uppercase tracking-widest text-muted shrink-0 mt-1.5">{lightbox.year}</p>
+                        </div>
+                        <p className="font-mono text-[9px] uppercase tracking-widest text-muted">{lightbox.category}</p>
+                      </div>
+                      {lightboxDetails && (
+                        <>
+                          <div className="bg-surface rounded-xl p-4">
+                            <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-2">Overview</p>
+                            <p className="font-sans text-sm text-text leading-relaxed">{lightboxDetails.goal}</p>
+                          </div>
+                          <div>
+                            <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-3">Design Highlights</p>
+                            <ul className="flex flex-col gap-2">
+                              {lightboxDetails.built.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2.5 font-sans text-sm text-muted leading-relaxed">
+                                  <span className="text-accent mt-0.5 shrink-0 font-bold">→</span>
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div className="bg-surface rounded-xl p-4">
+                            <p className="font-mono text-[9px] uppercase tracking-widest text-muted mb-2">Visual Direction</p>
+                            <p className="font-sans text-sm text-text leading-relaxed">{lightboxDetails.result}</p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                    <div className="px-6 py-4 bg-bg border-t border-theme shrink-0 flex items-center justify-between gap-4 flex-wrap">
+                      <div className="flex flex-wrap gap-1.5">
+                        {lightbox.tags.map((t) => (
+                          <span key={t} className="px-2.5 py-1 rounded-full bg-surface text-[10px] font-mono text-muted">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      {lightbox.href && (
+                        <a
+                          href={lightbox.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-text text-bg font-sans text-xs font-medium hover:opacity-80 transition-opacity"
+                        >
+                          View Live <ArrowUpRight size={12} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ) : isCaseStudy ? (
                 <>
                   {/* Fixed hero image */}
                   <div className="relative h-56 shrink-0 overflow-hidden">
