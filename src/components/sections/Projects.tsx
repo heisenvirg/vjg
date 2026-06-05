@@ -745,10 +745,14 @@ export default function Projects() {
   const [lightbox, setLightbox] = useState<Project | null>(null);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState<FilterKey>("All");
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const filtered = activeFilter === "All"
-    ? projects
+    ? projects.filter((p) => !p.filters.includes("Mockup"))
     : projects.filter((p) => p.filters.includes(activeFilter));
+
+  const visible = activeFilter === "All" ? filtered.slice(0, visibleCount) : filtered;
+  const hasMore = activeFilter === "All" && visibleCount < filtered.length;
 
   const handleCardClick = (p: Project) => {
     if (p.images || p.image) {
@@ -803,7 +807,7 @@ export default function Projects() {
             {FILTERS.map((f) => (
               <button
                 key={f}
-                onClick={() => setActiveFilter(f)}
+                onClick={() => { setActiveFilter(f); setVisibleCount(6); }}
                 className={`px-4 py-1.5 rounded-full font-mono text-[10px] uppercase tracking-widest transition-all ${
                   activeFilter === f
                     ? "bg-text text-bg"
@@ -818,7 +822,7 @@ export default function Projects() {
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <AnimatePresence mode="popLayout">
-              {filtered.map((p, i) => (
+              {visible.map((p, i) => (
                 <motion.div
                   key={p.num}
                   layout
@@ -904,6 +908,25 @@ export default function Projects() {
               ))}
             </AnimatePresence>
           </div>
+
+          {/* Load More */}
+          {hasMore && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="mt-8 text-center"
+            >
+              <button
+                onClick={() => setVisibleCount((c) => c + 6)}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-bg shadow-card hover:shadow-card-hover font-sans text-sm text-text transition-all border border-theme"
+              >
+                Load More
+                <span className="text-muted font-mono text-[10px]">
+                  {filtered.length - visibleCount} more
+                </span>
+              </button>
+            </motion.div>
+          )}
 
           {/* CTA */}
           <motion.div
