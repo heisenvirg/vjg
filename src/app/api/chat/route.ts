@@ -88,7 +88,7 @@ For an accurate quote, use the "Get a Quote" button in this chat or message Virg
 **Deployment:** Vercel, Git, GitHub, SEO, JSON-LD Schema
 
 --- EMPLOYMENT HISTORY ---
-- **2025–Present:** Freelance — Web Development, UI/UX Design, AI Automation
+- **2026–Present:** Freelance — Web Development, UI/UX Design, AI Automation
 - **2021–2025:** UI/UX Designer & Graphic Designer at Growmodo (200+ global brands)
 - **2019–2021:** UI/UX Designer → Web Developer at GoCrayons Digital Inc.
 
